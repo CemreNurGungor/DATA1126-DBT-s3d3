@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: gw
+    schema: course16
+    description: data for gw
+    tables:
+      - name: prod
+        identifier: gwz_product
+        description: ürün
+        columns:
+          - name: products_id
+            description: id of the product
+            tests:
+              - not_null
+              - unique
